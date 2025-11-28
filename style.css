@@ -1,0 +1,156 @@
+.body {
+    font-family: 'Poppins', sans-serif; /* Menggunakan font modern (asumsi Poppins tersedia atau di-import) */
+    margin: 0;
+    padding: 20px;
+    background-color: oklab(68.785% -0.07267 -0.15493); /* Latar belakang sangat lembut */
+    color: #080000;
+    padding-top:2cm;
+    padding-bottom: 10cm;
+    width: 100%;;
+}
+
+/* Container untuk memusatkan konten dan memberikan batas lebar */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    /* background-color: #00ff91bb; */
+    padding: 300px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(24, 0, 0, 0.08); /* Shadow yang halus */
+    padding-top: 3cm;
+    padding-bottom: 5cm;
+    padding-left: 5cm;
+    padding-right: 5cm;
+}
+
+
+.judul{
+    text-align: center;
+    font-size: 5ch;
+    color: rgb #f8f8f8;
+    padding-left: 1cm;
+    padding-top: 3px;
+    padding-right: 1cm;
+
+
+}
+
+
+.NAMALESKH{
+    text-align: center;
+    font-size: 18px;
+    color: #000000;
+    
+
+}
+ .loginju{
+        text-align: center ;
+        color: #27215e;
+        font-size: 10PX ;
+        padding-bottom: px;
+        padding-top: 0;
+        padding-left: 0;
+    }
+
+    
+.login-bok {
+    background-color: #ffffff;
+    color: #1f1c55fc;
+    padding: 50px 12px;
+    border-radius: 30px;
+    width: 7cm;
+    height: 11CM;
+    border: 4px solid #0067f7;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(155, 65, 65, 0.1);
+    margin: 50PX auto;
+    text-align: left;
+    margin-top:1CM;
+    -o-border-radius: 30px;
+
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 00px; /* Jarak antara elemen form */
+    padding-top: 16px;
+
+}
+
+label {
+    /* Label Username dan Password */
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 1cm; /* Dekatkan label ke input */
+}
+
+input[type="text"], 
+input[type="password"] {
+    /* Styling untuk field input */
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #6495ED; /* Border biru tipis */
+    border-radius: 5px;
+    box-sizing: border-box; 
+    font-size: 14px;
+    color: #333;
+}
+.login-box h1 {
+    font-size: 23cm;
+}
+.name {
+    padding-bottom: 20px;
+    padding-top: 3px;
+    
+}
+
+.loginlanjut {
+    text-align: center;
+    color: #000;
+    margin-top: 5px;
+    font-size: 15px;
+    padding-top: 48px;
+
+}
+.btn{
+    width: 100%;
+
+
+}
+
+.body1{
+
+    font-family: 'Poppins', sans-serif; /* Menggunakan font modern (asumsi Poppins tersedia atau di-import) */
+    margin: 0;
+    padding: 20px;
+    background-color: oklab(69.16600000000001% -0.07295 -0.15774); /* Latar belakang sangat lembut */
+    color: #080000;
+    padding: top 5cm;
+    padding-bottom: 40cm;
+  
+   
+}
+
+.datang{
+    font-size: 25px;
+    padding-top: 5cm;
+}
+
+.aplikasi{
+    font-size: 30px;
+}
+
+.altan{
+    font-size: 50px;
+}
+
+.tkj{
+    font-size: 20px;
+}
+
+.kelog{
+    width: 17%;
+    
+}
