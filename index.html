@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        SANTRI IT
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="body">
+        <div class="container">
+            <div class="judul">
+                <div class="logo">
+                    <img src="logo SMK.png" alt="logo SMK" width="80" height="80">
+                    <p>
+                        PEMBAYARAN DIGITAL
+                    </p>
+                </div>
+                <div class="NAMALESKH">
+                    <h3>
+                        SMK ALHIKMAH TANON
+                    </h3>
+                    <h4>
+                        Suyanto
+                    </h4>
+                </div>
+
+                <div class="login-bok">
+                    <div class="loginju">
+                        <h1>
+                            LOGIN
+                        </h1>
+                    </div>
+
+                    <form action="#" method="post" id="loginForm">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" placeholder="Masukkan  Username" />
+
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Masukkan  Password" />
+
+
+                        <div class="loginlanjut">
+                            <button type="submit" class="btn btn-primary btn-sm">
+                                LOGIN
+                            </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script>
+            function validasiLogin() {
+                let username = document.getElementById("username").value.trim();
+                let password = document.getElementById("password").value.trim();
+
+                // 2. Terapkan Operator Logika AND (&&)
+                // Kondisi: Apakah username TIDAK kosong (&&) DAN password TIDAK kosong?
+                if (username !== "" && password !== "") {
+                    // Jika KEDUA kondisi TRUE (Login Berhasil)
+                    alert("✅ Login Berhasil! Data siap dikirim.");
+
+                    // Pindahkan ke dashboard.html jika berhasil
+                    window.location.href = "dashboard.html";
+                    return false; // Mencegah form submit bawaan
+                } else {
+                    // Jika salah satu atau kedua kondisi FALSE (Login Gagal)
+                    alert("⚠️ Mohon isi Username dan Password!");
+
+                    // BARIS YANG DIHAPUS/DIHILANGKAN: 
+                    // window.location.href = "dashboard.html"; 
+                    // JANGAN PINDAH HALAMAN JIKA LOGIN GAGAL!
+
+                    return false; // Mencegah form submit bawaan
+                }
+            }
+
+            document.getElementById("loginForm").addEventListener("submit", function (event) {
+                event.preventDefault(); // Mencegah form submit bawaan
+                validasiLogin(); // Panggil fungsi validasi
+            });
+        </script>
+</body>
+
+</html>
